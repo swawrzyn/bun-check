@@ -1,11 +1,11 @@
 {
   "name": "bun-check",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check that the bun runtime is executing the file with the desired version",
   "author": "Stefan Wawrzyn <swawrzyn@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/swawrzyn/bun-check.git"
+    "url": "git+https://github.com/swawrzyn/bun-check.git"
   },
   "module": "./lib/index.ts",
   "main": "./lib/index.ts",
@@ -13,8 +13,7 @@
   "scripts": {
     "check:fix": "biome check --apply ./lib",
     "check": "biome check ./lib",
-    "test": "bun test ./lib/*",
-    "postinstall": "lefthook install"
+    "test": "bun test ./lib/*"
   },
   "devDependencies": {
     "@biomejs/biome": "1.5.2",
